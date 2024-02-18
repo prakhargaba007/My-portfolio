@@ -8,14 +8,14 @@ function FeedbackForm() {
 
     const fd = new FormData(e.target);
     const data = Object.fromEntries(fd.entries());
+    const fdData = { key: Math.random(), ...data };
 
     const response = await fetch(
       "https://to-do-list-c24eb-default-rtdb.firebaseio.com/feedbacks.json",
       {
         method: "PUT",
         body: JSON.stringify({
-          key: Math.random(),
-          data: data,
+          data: fdData,
         }),
       }
     );
