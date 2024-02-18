@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 21px;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+}
+.container a img {
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--body_color);
+  font-size: large;
+  /* align-self: center; */
+}
+
+ul a:hover,
+ul a.active {
+  color: var(--body_color);
+  text-decoration: underline;
+}
+
+button {
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 1px, black;
+  background-color: rgb(44, 186, 234);
+}
+
+button:hover {
+  background-color: rgb(103, 210, 245);
+}
+
+.login-button {
+  display: flex;
+  gap: 15px;
+}
+
+.theme{
+  border: none;
+  background-color: rgb(103, 210, 245,0);
+  padding: 5px;
+}
+.theme:hover{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme img{
+  height: 30px;
+  /* border: 2px blue; */
+}

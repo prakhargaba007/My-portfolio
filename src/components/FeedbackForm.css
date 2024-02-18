@@ -1,0 +1,26 @@
+.feedback-form {
+  /* text-align: center; */
+  margin: 50px 20rem;
+  color: var(--body_color);
+}
+.feedback-form div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.feedback-form div input {
+  height: 25px;
+}
+.feedback-form p {
+  display: flex;
+  gap: 15px;
+}
+.feedback-form div label {
+  font-size: large;
+}
+.feedback-form h2 {
+  font-size: xx-large;
+}
+.feedback-form div textarea {
+  max-width: 100%;
+}

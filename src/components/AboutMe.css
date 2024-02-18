@@ -1,0 +1,11 @@
+.about-me{
+    text-align: center;
+    margin: 5rem 15rem;
+    color: var(--body_color);
+}
+.about-me h1{
+    font-size: 40px;
+}
+.about-me p{
+    font-size: 25px;
+}
