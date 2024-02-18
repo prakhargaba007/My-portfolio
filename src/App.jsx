@@ -5,7 +5,7 @@ import AuthenticationPage from "./pages/Authentication";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/My-portfolio",
     element: <RootElement />,
     // errorElement: <ErrorPage />,
     children: [
