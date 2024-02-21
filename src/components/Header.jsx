@@ -2,8 +2,14 @@ import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import Button from "./Button";
 import DarkMode from "./DarkMode/DarkMode/DarkMode";
+import { useState } from "react";
 
 function Header() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <header>
       <div className="container">
@@ -13,7 +19,7 @@ function Header() {
           </NavLink>
         </div>
         <nav>
-          <ul>
+          <ul aria-disabled className={`nav-links ${isMenuOpen ? "active" : ""}`}>
             <li>
               <a
                 href="#home"
@@ -39,14 +45,14 @@ function Header() {
               </a>
             </li>
           </ul>
+          <div className="burger-menu" onClick={handleToggleMenu}>
+            &#9776;
+          </div>
         </nav>
       </div>
       <div className="login-button">
-        {/* <button className="theme">
-          <img src={lightTheme} alt="" />
-        </button> */}
         <DarkMode />
-        <Link to='/signup?mode=signup'>
+        <Link to="/signup?mode=signup">
           <Button>Sign Up</Button>
         </Link>
       </div>

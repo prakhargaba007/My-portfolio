@@ -9,3 +9,9 @@
 .about-me p{
     font-size: 25px;
 }
+
+@media screen and (max-width: 903px) {
+    .about-me{
+        margin: 5rem  7%;
+    }
+}
