@@ -15,38 +15,43 @@ function Header() {
       <div className="container">
         <div>
           <NavLink to="/">
-            <h1>PORTOFOLIO WEBSITE</h1>
+            <h1>
+              <span>PORTOFOLIO WEBSITE</span>
+            </h1>
           </NavLink>
         </div>
         <nav>
-          <ul aria-disabled className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          <ul
+            aria-disabled
+            className={`nav-links ${isMenuOpen ? "active" : ""}`}
+          >
             <li>
-              <a
-                href="#home"
+              <Link
+                to="#home"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="#about"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
+              <Link
+                to="#projects"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 Project
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="burger-menu" onClick={handleToggleMenu}>
-            &#9776;
+            <span>&#9776;</span>
           </div>
         </nav>
       </div>

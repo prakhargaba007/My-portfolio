@@ -36,7 +36,7 @@ function About() {
           <span ref={el}></span>
         </p>
         <span id="element"></span>
-        <div class="buttons"></div>
+        <div className="buttons"></div>
       </div>
       <div className="c2">
         <img src={prakhars_photo} alt="prakhar's photo" />

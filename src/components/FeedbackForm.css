@@ -1,4 +1,4 @@
-.feedback-form {
+ .feedback-form {
   max-width: 400px;
   margin: 40px auto;
 }
@@ -7,6 +7,7 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: #333;
+  color: var(--body_color);
 }
 
 .feedback-form div {
@@ -17,6 +18,7 @@
   display: block;
   font-size: 0.9rem;
   margin-bottom: 5px;
+  color: var(--body_color);
 }
 
 .feedback-form input,
@@ -30,22 +32,30 @@
 }
 
 .feedback-form textarea {
-  resize: vertical; /* Allow vertical resizing of textarea */
+  resize: vertical; 
 }
 
-/* .feedback-form .control {
+.feedback-form .control {
   margin-top: 15px;
-} */
-.terms-and-conditions{
+}
+.terms-and-conditions {
   display: flex;
 }
 
+.control input{
+  width: auto;
+  margin-right: 5px;
+}
+
+/* .control {
+  display: flex;
+  gap: 100px;
+} */
 .feedback-form p {
   margin-top: 20px;
   text-align: right;
 }
 
-/* Style the buttons */
 .feedback-form button {
   padding: 10px 15px;
   font-size: 1rem;
@@ -62,8 +72,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .feedback-form{
+  .feedback-form {
     margin: 40px 30px;
   }
-  
-}
+} 

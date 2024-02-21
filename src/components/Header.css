@@ -6,13 +6,15 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 21px;
+  flex-direction: row;
+  padding: 21px 0;
   flex-wrap: wrap;
 }
 
 .container {
   display: flex;
-  /* flex-wrap: wrap; */
+  justify-content:space-between;
+  /* justify-content: space-around; */
   gap: 100px;
 }
 
@@ -33,7 +35,7 @@ ul a:hover,
 ul a.active {
   color: var(--body_color);
   text-decoration: underline;
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 }
 
 button {
@@ -52,48 +54,34 @@ button:hover {
   gap: 15px;
 }
 
-.theme {
-  border: none;
-  background-color: rgb(103, 210, 245, 0);
-  padding: 5px;
-}
-.theme:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.theme img {
-  height: 30px;
-  /* border: 2px blue; */
-}
 .burger-menu {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .container{
+  /* .container {
     flex-wrap: wrap;
     justify-content: center;
-  }
+  } */
 }
 @media screen and (max-width: 903px) {
-  header{
-    
-  justify-content:center;
+  header {
+    justify-content: center;
   }
-  .container div h1 {
-    margin-left: 100px;
+  .container div span {
+    /* margin-left: 100px; */
+    width: 100px;
   }
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 150px;
     left: 0;
     width: 100%;
     background-color: #1d97e2;
-    text-align: center;
+    text-align: center;    
   }
 
   .nav-links.active {
