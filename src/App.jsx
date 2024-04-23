@@ -3,7 +3,7 @@ import RootElement from "./pages/RootElement";
 import MainPage from "./pages/MainPage";
 import AuthenticationPage from "./pages/Authentication";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <RootElement />,

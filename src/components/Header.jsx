@@ -26,31 +26,36 @@ function Header() {
             className={`nav-links ${isMenuOpen ? "active" : ""}`}
           >
             <li>
-              <Link
-                to="#home"
+              <a
+                href="#home"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="#about"
+              <a
+                href="#about"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="#projects"
+              <a
+                href="#projects"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 Project
-              </Link>
+              </a>
             </li>
             <li>
-              <a href="https://github.com/prakhargaba007" className={({ isActive }) => (isActive ? "active" : undefined)}>GitHub</a>
+              <a
+                href="https://github.com/prakhargaba007"
+                className={({ isActive }) => (isActive ? "active" : undefined)}
+              >
+                GitHub
+              </a>
             </li>
           </ul>
           <div className="burger-menu" onClick={handleToggleMenu}>
