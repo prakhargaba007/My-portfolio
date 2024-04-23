@@ -87,4 +87,12 @@ export let list = [
     gitRepoLink: "https://github.com/prakhargaba007/UsabilityHub-dummy-project",
     gitPages: "https://prakhargaba007.github.io/UsabilityHub-dummy-project/",
   },
+  {
+    key: "p12",
+    projectName: "E-Commerce with payment",
+    langUsed: "React",
+    projectDesc: "This is a simple project created using React.",
+    gitRepoLink: "https://github.com/prakhargaba007/e-commerce",
+    gitPages: "https://e-commercee-anhs.onrender.com/",
+  },
 ];

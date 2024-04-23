@@ -49,6 +49,9 @@ function Header() {
                 Project
               </Link>
             </li>
+            <li>
+              <a href="https://github.com/prakhargaba007" className={({ isActive }) => (isActive ? "active" : undefined)}>GitHub</a>
+            </li>
           </ul>
           <div className="burger-menu" onClick={handleToggleMenu}>
             <span>&#9776;</span>

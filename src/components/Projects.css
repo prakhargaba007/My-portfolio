@@ -33,7 +33,8 @@
 
 @media screen and (max-width: 480px) {
   .list {
-    width: 77px;
+    width: 140px;
+
   }
   .list h2{
     font-size: 1.15rem;
@@ -42,6 +43,9 @@
     font-size: 1rem;
   }
   .links {
-    margin: 0;
+    margin: 1px;
+  }
+  .container2 {
+    margin: 50px 5px;
   }
 }
